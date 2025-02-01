@@ -43,7 +43,7 @@
   <body class="sora">
     <header>
       <!-- Navbar Section -->
-      <nav class="bg-[#FFF9F4] border-b-2 relative z-10">
+      <nav class="bg-[#FFF9F4] border-b-2 md:border-b-0 relative z-10 py-2">
         <div class="navbar container lg:px-16 mx-auto">
           <div class="navbar-start">
             <img src="c1-assets/logo-header.png" alt="" />
@@ -61,7 +61,10 @@
           <div class="lg:flex navbar-end space-x-3 hidden">
             <i class="fa-regular fa-bell"></i>
             <i class="fa-solid fa-magnifying-glass"></i>
-            <a class="btn btn-outline hover:bg-[#FFDC26] ylw">Login</a>
+            <a
+              class="btn btn-outline border-[#FFDC26] text-black hover:bg-[#FFDC26] ylw"
+              >Login</a
+            >
             <a class="btn bg-[#FFDC26]">Register</a>
           </div>
           <div class="lg:hidden dropdown inline-flex navbar-end">
@@ -91,7 +94,7 @@
               Discover a world of treats, toys, and essentials handpicked for
               your furry friends. Shop now and make tails wag with joy!
             </p>
-            <button class="btn bg-[#ffdc26]">Find a pet</button>
+            <button class="btn bg-[#ffdc26] animate-bounce">Find a pet</button>
           </div>
           <img
             class="relative lg:absolute z-0 lg:top-4 -top-24"
@@ -105,10 +108,12 @@
       <!-- Categories Section -->
       <section class="container px-4 lg:px-16 mx-auto lg:my-20">
         <h2 class="text-3xl font-bold mb-12">Browse By Categories</h2>
-        <div class="flex flex-wrap justify-center sm:justify-between gap-4">
+        <div
+          class="flex flex-wrap justify-center sm:justify-between 2xl:justify-normal gap-4"
+        >
           <!-- Card 1 -->
           <div class="card bg-[#F9DF8A] shadow-xl">
-            <figure class="px-10 pt-10">
+            <figure class="px-10 2xl:px-16 pt-10">
               <div class="avatar">
                 <div class="bg-white rounded-full">
                   <img class="p-4" src="c1-assets/dog-cartoon.png" />
@@ -122,7 +127,7 @@
           </div>
           <!-- Card 2 -->
           <div class="card bg-[#F9DF8A] shadow-xl">
-            <figure class="px-10 pt-10">
+            <figure class="px-10 2xl:px-16 pt-10">
               <div class="avatar">
                 <div class="bg-white rounded-full">
                   <img class="p-4" src="c1-assets/fish-cartoon.png" />
@@ -136,7 +141,7 @@
           </div>
           <!-- Card 3 -->
           <div class="card bg-[#F9DF8A] shadow-xl">
-            <figure class="px-10 pt-10">
+            <figure class="px-10 2xl:px-16 pt-10">
               <div class="avatar">
                 <div class="bg-white rounded-full">
                   <img class="p-4" src="c1-assets/cat-cartoon.png" />
@@ -150,7 +155,7 @@
           </div>
           <!-- Card 4 -->
           <div class="card bg-[#F9DF8A] shadow-xl">
-            <figure class="px-10 pt-10">
+            <figure class="px-10 2xl:px-16 pt-10">
               <div class="avatar">
                 <div class="bg-white rounded-full">
                   <img class="p-4" src="c1-assets/bird-cartoon.png" />
@@ -164,7 +169,7 @@
           </div>
           <!-- Card 5 -->
           <div class="card bg-[#F9DF8A] shadow-xl">
-            <figure class="px-10 pt-10">
+            <figure class="px-10 2xl:px-16 pt-10">
               <div class="avatar">
                 <div class="bg-white rounded-full">
                   <img class="p-4" src="c1-assets/mouse-cartoon.png" />
@@ -178,7 +183,7 @@
           </div>
           <!-- Card 6 -->
           <div class="card bg-[#F9DF8A] shadow-xl">
-            <figure class="px-10 pt-10">
+            <figure class="px-10 2xl:px-16 pt-10">
               <div class="avatar">
                 <div class="bg-white rounded-full">
                   <img class="p-4" src="c1-assets/rabbit-cartoon.png" />
@@ -202,7 +207,7 @@
             <div class="card bg-[#F9DF8A] md:min-w-96 h-[400px] shadow-xl">
               <div class="relative card-body">
                 <div class="space-y-4">
-                  <h3 class="card-title mt-4">T-Shirt For Dogs</h3>
+                  <h3 class="card-title text-2xl mt-4">T-Shirt For Dogs</h3>
                   <p>
                     Discover a world of treats, toys, and <br />essentials
                     handpicked for
@@ -434,7 +439,11 @@
                   <p class="text-white text-3xl lg:text-4xl font-bold">$7.99</p>
                 </div>
                 <div class="absolute bottom-0 right-0 pt-8 pl-16">
-                  <img class="z-0" src="c1-assets/cute-dog-mid.png" alt="" />
+                  <img
+                    class="w-[900%] z-0"
+                    src="c1-assets/cute-dog-mid.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -475,7 +484,7 @@
       </section>
 
       <!-- News Section -->
-      <section class="relative translate-y-1/2">
+      <section class="absolute translate-y-28 sm:relative sm:translate-y-1/2">
         <div class="container px-4 lg:px-16 mx-auto">
           <div class="flex card md:card-side bg-[#FFF9F4]">
             <figure class="px-5 md:px-20 pt-10 md:py-10">
@@ -505,14 +514,16 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="bg-[#FFDC2680] text-base-content pt-[400px] md:pt-72 pb-10">
+    <footer
+      class="bg-[#FFDC2680] text-base-content mt-[500px] sm:mt-0 pt-[400px] md:pt-72 pb-10"
+    >
       <div
         class="footer container px-4 lg:px-16 pl-10 md:py-20 mx-auto items-center justify-between"
       >
         <aside>
           <div class="flex items-center">
             <img src="c1-assets/logo-footer.png" alt="" />
-            <a class="text-2xl font-semibold pl-2"
+            <a class="text-3xl font-semibold pl-2"
               >Browse<span class="ylw">4</span>Pets</a
             >
           </div>
@@ -522,13 +533,13 @@
             essentials handpicked for your furry<br />friends
           </p>
         </aside>
-        <nav class="font-semibold">
+        <nav class="text-lg font-semibold">
           <a class="link link-hover">Find a pet</a>
           <a class="link link-hover">Breeds</a>
           <a class="link link-hover">Contact us</a>
         </nav>
         <nav>
-          <h6 class="text-xs font-semibold">Follow Us</h6>
+          <h6 class="text-lg font-semibold">Follow Us</h6>
           <div class="grid grid-flow-col gap-4">
             <a>
               <i class="fa-brands fa-facebook"></i>
