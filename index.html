@@ -21,10 +21,85 @@
       src="https://kit.fontawesome.com/d9c8275cd7.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .sora {
+        font-family: "Sora", serif;
+      }
+      .adlam {
+        font-family: "ADLaM Display", serif;
+      }
+      .ylw {
+        color: #ffdc26;
+      }
+    </style>
   </head>
-  <body>
+  <body class="sora">
     <header>
-      <nav></nav>
+      <!-- Navbar Section -->
+      <nav class="bg-[#FFF9F4] border-b-2 relative z-10">
+        <div class="navbar container lg:px-16 mx-auto">
+          <div class="navbar-start">
+            <img src="c1-assets/logo-header.png" alt="" />
+            <a class="text-2xl pl-2 hidden lg:block"
+              >Browse<span class="ylw">4</span>Pets</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="lg:flex navbar-end space-x-3 hidden">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a class="btn btn-outline hover:bg-[#FFDC26] ylw">Login</a>
+            <a class="btn bg-[#FFDC26]">Register</a>
+          </div>
+          <div class="lg:hidden dropdown inline-flex navbar-end">
+            <div tabindex="0" role="button" class="btn btn-ghost">
+              <img src="c1-assets/stroke.png" alt="" />
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Banner Section -->
+      <section class="">
+        <div class="container px-4 lg:px-16 mx-auto py-8 lg:py-24">
+          <div class="relative space-y-4 z-10">
+            <h1 class="lg:text-5xl text-2xl font-bold">
+              Pamper Your Pet,<br />Because They Deserve<br />
+              the Bes
+            </h1>
+            <p class="text-sm lg:text-base w-[90%] lg:w-[40%] text-gray-600">
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends. Shop now and make tails wag with joy!
+            </p>
+            <button class="btn bg-[#ffdc26]">Find a pet</button>
+          </div>
+          <img
+            class="relative lg:absolute z-0 lg:top-4 -top-24"
+            src="c1-assets/cat-big.png"
+            alt=""
+          />
+        </div>
+      </section>
     </header>
     <main></main>
     <footer></footer>
